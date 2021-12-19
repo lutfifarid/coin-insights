@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-  return '<h1>Coin Insight Comming Soon</h1>'
+  return '<h1>Coin Insight Coming Soon</h1>'
 
 if __name__ == "__main__":
      app.debug = False
