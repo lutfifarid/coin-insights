@@ -6,6 +6,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-  return '<h1>I want to Deploy Flask to Herokss22 asdasasdasd asu</h1>'
+  return '<h1>I want to Deploy Flask</h1>'
 
 serve(app, listen='*:8080')
