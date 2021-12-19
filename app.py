@@ -1,5 +1,6 @@
 from flask import Flask, Response, url_for
-from waitress import serve
+import waitress 
+import gunicorn 
 import os
 
 app = Flask(__name__)
@@ -12,4 +13,4 @@ def index():
 if __name__ == "__main__":
      app.debug = False
      port = int(os.environ.get('PORT', 33507))
-     serve(app, port=port)
+     waitress.serve(app, port=port)
